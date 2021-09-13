@@ -20,7 +20,7 @@
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <commandTopic>cmd_vel</commandTopic>
-      <broadcastTF>false</broadcastTF>
+      <broadcastTF>1</broadcastTF>
     </plugin>
   </gazebo>
 

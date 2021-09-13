@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <!-- Map Server -->
   <arg name="map_file" default="$(find my_robot)/maps/my_world.yaml"/>
@@ -5,12 +6,11 @@
 
   <!-- AMCL Node -->
   <node name="amcl" pkg="amcl" type="amcl" output="screen">
-    <!--<remap from="scan" to="my_robot/laser/scan"/>-->
-
     <!-- Overall filter parameters -->
+    <param name="use_map_topic" value="true"/>
     <param name="initial_pose_x" value="0.0"/>
     <param name="initial_pose_y" value="4.0"/>
-    <param name="use_map_topic" value="true"/>
+    <param name="initial_pose_a" value="-1.5708"/>
 
     <!-- Odometry model parameters -->
     <param name="odom_frame_id" value="odom"/>
@@ -21,7 +21,6 @@
 
   <!-- Move Base -->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
-    <!--<remap from="scan" to="my_robot/laser/scan"/>-->
 
     <param name="base_global_planner" value="navfn/NavfnROS"/>
     <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
