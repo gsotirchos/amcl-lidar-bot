@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a package containing 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements and the robot localizes itself while it moves via move commands with the `move_base` or `teleop_switch_keyboard` nodes.
+This is a package containing a 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements and the robot localizes itself while it moves via move commands with the `move_base` or `teleop_switch_keyboard` nodes.
 
 ### License
 
@@ -10,7 +10,7 @@ The source code is released under an [MIT license](LICENSE).
 
 **Author/Maintainer: George Sotirchos**
 
-The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Kinetic in a docker container on Ubuntu 20.04 (see [Running in Docker](###running-in-docker) section). This is experimental, personal project code, and possibly subject to frequent changes with any need for explanation disclaimed.
+The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Kinetic in a docker container on Ubuntu 20.04 (see [Running in Docker](#running-in-docker) section). This is experimental, personal project code, and possibly subject to frequent changes with any need for explanation disclaimed.
 
 ![Example image](media/recording.gif)
 
@@ -57,7 +57,7 @@ docker run \
 
 This downloads the `mjenz/ros-kinetic-desktop-full` image from [mjenz](https://hub.docker.com/u/mjenz)'s Docker repository, indicates that it requires an interactive terminal (`-t`, `-i`), gives it a name (`--name`), removes it after you exit the container (`--rm`), sets the required environment variables (`--env`) and access to local resources (`--device`, `--volume`) to be able to launch graphical applications (Gazebo, RViz, rqt_graph, etc.), and runs a command (`bash`).
 
-Now, continue with the instructions from the [Building](####building) section.
+Now, continue with the instructions from the [Building](#building) section.
 
 ## Usage
 
