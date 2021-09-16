@@ -94,5 +94,5 @@ Now, continue with the instructions from the [Building](#building) section.
 
 Please report bugs and request features using the [Issue Tracker](https://github.com/7555G/amcl-lidar-bot/issues).
 
-ROS: http://www.ros.org
-
+ROS: http://www.ros.org<br/>
+ROS Navigation Stack: https://github.com/ros-planning/navigation
