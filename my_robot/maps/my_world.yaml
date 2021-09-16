@@ -1,5 +1,5 @@
 image: my_world.pgm
-resolution: 0.03
+resolution: 0.02
 origin: [-15.0, -15.0, 0.0]
 occupied_thresh: 0.65
 free_thresh: 0.196
