@@ -133,12 +133,6 @@ Processes the laser scan published at `/scan` and requests the appropriate drive
 
     The robot-mount Lidar measurements.
 
-#### Published Topics
-
-* **`/cmd_vel`** ([geometry_msgs/Twist](http://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Twist.html))
-
-    The requested `linear_x` and `angular_z` velocities for the robot wheel joints.
-
 ## Bugs & Feature Requests
 
 Please report bugs and request features using the [Issue Tracker](https://github.com/7555G/amcl-lidar-bot/issues).
