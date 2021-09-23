@@ -4,7 +4,7 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'" />
 
   <!-- Robot pose -->
-  <arg name="x" default="0"/>
+  <arg name="x" default="0.5"/>
   <arg name="y" default="4"/>
   <arg name="z" default="0"/>
   <arg name="roll" default="0"/>

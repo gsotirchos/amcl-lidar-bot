@@ -47,6 +47,7 @@
     <param name="odom_model_type" value="diff-corrected"/>
   </node>
 
+  <!-- arg: Use keyboard teleop -->
   <arg name="use_teleop" default="false" doc="Whether to control the robot with a teleop node instead of the default move_base node."/>
 
   <!-- Move Base -->
