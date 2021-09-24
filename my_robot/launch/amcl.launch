@@ -45,6 +45,10 @@
 
     <!-- Odometry model parameters -->
     <param name="odom_model_type" value="diff-corrected"/>
+    <param name="odom_alpha1" value="0.001"/>
+    <param name="odom_alpha2" value="0.001"/>
+    <param name="odom_alpha3" value="0.001"/>
+    <param name="odom_alpha4" value="0.001"/>
   </node>
 
   <!-- arg: Use keyboard teleop -->
