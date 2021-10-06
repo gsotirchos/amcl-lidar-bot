@@ -12,7 +12,7 @@ The source code is released under an [MIT license](LICENSE).
 
 **Author/Maintainer: George Sotirchos**
 
-The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Kinetic in a docker container on Ubuntu 20.04 (see [Running in Docker](#running-in-docker) section). This is experimental, personal project code, and possibly subject to frequent changes with any need for explanation disclaimed.
+The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Noetic on Ubuntu 20.04. This is experimental, personal project code, and possibly subject to frequent changes with any need for explanation disclaimed.
 
 ![Example image](media/recording.gif)
 
@@ -36,31 +36,6 @@ cd ../
 rosdep install --from-paths . --ignore-src
 catkin_make
 ```
-
-### Running in Docker
-
-Install [Docker](https://docs.docker.com/get-docker/).
-
-Spin up a container with GUI forwarding for X11 applications:
-
-``` bash
-docker run \
-    -ti \
-    --rm \
-    --network=host \
-    --env="DISPLAY" \
-    --env QT_X11_NO_MITSHM=1 \
-    --device=/dev/dri:/dev/dri \
-    --volume="$HOME/.Xauthority:/root/.Xauthority:rw" \
-    --name ros-container \
-    mjenz/ros-kinetic-desktop-full \
-    bash
-```
-
-This downloads the `mjenz/ros-kinetic-desktop-full` image from [mjenz](https://hub.docker.com/u/mjenz)'s Docker repository, indicates that it requires an interactive terminal (`-t`, `-i`), gives it a name (`--name`), removes it after you exit the container (`--rm`), sets the required environment variables (`--env`) and access to local resources (`--device`, `--volume`) to be able to launch graphical applications (Gazebo, RViz, rqt_graph, etc.), and runs a command (`bash`).
-
-Now, continue with the instructions from the [Building](#building) section.
-
 ## Usage
 
 1. Start the Gazebo environment containing the robot:
