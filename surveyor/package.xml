@@ -3,7 +3,7 @@
   <name>surveyor</name>
   <version>1.0.0</version>
   <description>
-      Package containing the nodes for laser measurement processing and sending drive commands to a wheeled robot for surveillance.
+    Package containing the nodes for laser measurement processing and sending drive commands to a wheeled robot for surveillance.
   </description>
 
   <author email="gsotirch@gmail.com">George Sotirchos</author>
