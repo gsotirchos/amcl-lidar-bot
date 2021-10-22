@@ -3,7 +3,7 @@
 ## Overview
 
 This is a meta-package containing two packages:
-* **my_robot**: A 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements. The robot localizes itself while controlled manually via move commands with the `move_base` node or via the keyboard with the `teleop_switch_keyboard` nodes. Optionally, the package 
+* **my_robot**: A 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements. The robot localizes itself while controlled manually via move commands with the `move_base` node or via the keyboard with the `teleop_switch_keyboard` nodes. Optionally, the `surveyor` package can be used for simple autonomous motion.
 * **surveyor**: Processes the laser measurements and drives the robot accordingly. The direction of the farthest measured distance is determined and the robot is driven to move towards this direction.
 
 ### License
