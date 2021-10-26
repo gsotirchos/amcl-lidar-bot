@@ -26,7 +26,7 @@ The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Noet
 
 #### Building
 
-To build from source, with ROS Kinetic on Ubuntu 16.04, clone the latest version from this repository into your catkin workspace and compile the package using
+To build from source, with ROS Kinetic on Ubuntu 20.04, clone the latest version from this repository into your catkin workspace and compile the package using
 
 ``` bash
 mkdir -p /catkin_ws/src
