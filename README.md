@@ -22,7 +22,10 @@ The amcl-lidar-bot package has been tested under [ROS](https://www.ros.org) Noet
 
 #### Dependencies
 
-- [Robot Operating System (ROS)](http://wiki.ros.org) (middleware for robotics),
+- [ros-noetic](http://wiki.ros.org)
+- [ros-noetic-amcl](http://wiki.ros.org/amcl)
+- [ros-noetic-move-base](http://wiki.ros.org/move_base)
+- [ros-noetic-teleop-twist-keyboard](http://wiki.ros.org/teleop_twist_keyboard)
 
 #### Building
 
@@ -113,4 +116,6 @@ Processes the laser scan published at `/scan` and requests the appropriate drive
 Please report bugs and request features using the [Issue Tracker](https://github.com/7555G/amcl-lidar-bot/issues).
 
 ROS: http://www.ros.org<br/>
-ROS Navigation Stack: https://github.com/ros-planning/navigation
+AMCL ROS package: https://github.com/ros-planning/navigation<br/>
+move_base ROS package (ROS Navigation stack): https://github.com/ros-planning/navigation<br/>
+teleop_twist_keyboard ROS package: https://github.com/ros-teleop/teleop_twist_keyboard
