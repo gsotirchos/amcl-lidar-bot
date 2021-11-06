@@ -116,6 +116,6 @@ Processes the laser scan published at `/scan` and requests the appropriate drive
 Please report bugs and request features using the [Issue Tracker](https://github.com/7555G/amcl-lidar-bot/issues).
 
 ROS: http://www.ros.org<br/>
-AMCL ROS package: https://github.com/ros-planning/navigation<br/>
+amcl ROS package: https://github.com/ros-planning/navigation<br/>
 move_base ROS package (ROS Navigation stack): https://github.com/ros-planning/navigation<br/>
 teleop_twist_keyboard ROS package: https://github.com/ros-teleop/teleop_twist_keyboard
