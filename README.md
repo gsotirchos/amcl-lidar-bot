@@ -3,7 +3,7 @@
 ## Overview
 
 This is a meta-package containing two packages:
-* **my_robot**: A 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements. The robot localizes itself while controlled manually via move commands with the `move_base` node or via the keyboard with the `teleop_switch_keyboard` nodes. Optionally, the `surveyor` package can be used for simple autonomous motion.
+* **my_robot**: A 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar in a Gazebo environment. A pre-generated costmap is provided to the `amcl` node along with the laser measurements. The robot localizes itself while controlled manually via move commands with the `move_base` node or via the keyboard with the `teleop_twist_keyboard` nodes. Optionally, the `surveyor` package can be used for simple autonomous motion.
 * **surveyor**: Processes the laser measurements and drives the robot accordingly. The direction of the farthest measured distance is determined and the robot is driven to move towards this direction.
 
 ### License
@@ -53,7 +53,7 @@ catkin_make
     roslaunch my_robot amcl.launch
     ```
 
-    Or to use the `teleop_switch_keyboard` node for robot control instead of the `move_base` node:
+    Or to use the `teleop_twist_keyboard` node for robot control instead of the `move_base` node:
 
     ``` bash
     roslaunch my_robot amcl.launch use_teleop:=true
@@ -69,7 +69,7 @@ catkin_make
 
 * **my_robot/launch/world.launch:** A Gazebo simulation is opened with 4-wheeled skid-steer drive robot equipped with a camera and a Hokuyo lidar spawned in an office environment, along with an RViz window showing the camera image and the lidar measurements on a pre-generated costmap.
 
-* **my_robot/launch/amcl.launch:** Starts the `map_server`, `amcl`, and `move_base`/`teleop_switch_keyboard` nodes and loads their configurations.
+* **my_robot/launch/amcl.launch:** Starts the `map_server`, `amcl`, and `move_base`/`teleop_twist_keyboard` nodes and loads their configurations.
 
      Arguments:
 
