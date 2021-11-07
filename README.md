@@ -96,9 +96,10 @@ Provides a service for publishing drive commands to the robots actuators.
 
     Publishes the requested the requested `linear_x` and `angular_z` velocities to `/cmd_vel` topic.
 
-    ```
-    rosservice call /surveyor/command_robot "linear_x: 0.0
-    angular_z: 0.0"  # with the newline
+    ``` bash
+    rosservice call /surveyor/command_robot \
+    "linear_x: 0.0
+    angular_z: 0.0"
     ```
 
 ### process_laser
