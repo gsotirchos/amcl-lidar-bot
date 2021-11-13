@@ -34,7 +34,7 @@ To build from source, with ROS Kinetic on Ubuntu 20.04, clone the latest version
 ``` bash
 mkdir -p /catkin_ws/src
 cd catkin_ws/src
-git clone https://github.com/7555G/amcl-lidar-bot
+git clone https://github.com/gsotirchos/amcl-lidar-bot
 cd ../
 rosdep install --from-paths . --ignore-src
 catkin_make
@@ -114,7 +114,7 @@ Processes the laser scan published at `/scan` and requests the appropriate drive
 
 ## Bugs & Feature Requests
 
-Please report bugs and request features using the [Issue Tracker](https://github.com/7555G/amcl-lidar-bot/issues).
+Please report bugs and request features using the [Issue Tracker](https://github.com/gsotirchos/amcl-lidar-bot/issues).
 
 ROS: http://www.ros.org<br/>
 amcl ROS package: https://github.com/ros-planning/navigation<br/>
